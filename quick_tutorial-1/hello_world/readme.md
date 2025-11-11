@@ -1,4 +1,4 @@
-<h1> Proyek Hello World Pyramid </h1>
+<h1> 01: Single-File Web Applications </h1>
 
 -------
 
@@ -22,7 +22,7 @@ Pastikan Virtual Environment Aktif Pastikan virtual environment Anda (misalnya %
 4. Lihat di Browser Buka browser Anda dan kunjungi http://localhost:6543/
 
 ----------
-<h3> Penjelasan Kode (app.py) </h3>
+<h3> Analisis Kode (app.py) </h3>
 
 1. Titik Masuk (Entry Point) - Baris 11
 
