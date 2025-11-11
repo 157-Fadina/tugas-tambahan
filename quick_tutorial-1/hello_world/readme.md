@@ -1,21 +1,25 @@
-Proyek Hello World Pyramid
+<h1> Proyek Hello World Pyramid </h1>
+
+-------
 
 Menjalankan Proyek
 Pastikan Virtual Environment Aktif Pastikan virtual environment Anda (misalnya %VENV%) sudah aktif di terminal.
 
 Install Ketergantungan (Dependencies) Jika belum, install Pyramid dan Waitress:
 
+------
 Bash
 pip install pyramid
 pip install waitress
 Jalankan Server Dari dalam folder hello_world, jalankan aplikasi:
-
+------
 Bash
 python app.py
 Lihat di Browser Buka browser Anda dan kunjungi http://localhost:6543/
 
-Penjelasan Kode (app.py)
-
+----------
+<h3> Penjelasan Kode (app.py) </h3>
+----------
 1. Titik Masuk (Entry Point) - Baris 11
 
 if __name__ == '__main__':
@@ -37,6 +41,8 @@ config.add_view(hello_world, route_name='hello'): Menghubungkan rute ke view. In
 def hello_world(request):
     print('Incoming request')
     return Response('<body><h1>Hello World!</h1></body>')
+
+<img width="663" height="204" alt="image" src="https://github.com/user-attachments/assets/e1e948c8-b756-418a-878e-815ee15b0844" />
 
 Ini adalah fungsi "view" (hello_world) yang dirujuk pada langkah konfigurasi. Hal ini adalah logika sebenarnya yang dijalankan saat pengguna (kita) mengunjungi rute /. Tugasnya adalah menerima request dan mengembalikan jawaban, yang dalam hal ini adalah HTML sederhana.
 
