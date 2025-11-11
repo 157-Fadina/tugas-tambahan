@@ -9,15 +9,15 @@ Pastikan Virtual Environment Aktif Pastikan virtual environment Anda (misalnya %
 
     <b> Bash </b>
 
-        <i> pip install pyramid </i>
+        pip install pyramid
 
-        <i> pip install waitress </i>
+        pip install waitress
 
 3. Jalankan Server Dari dalam folder hello_world, jalankan aplikasi:
 
     <b> Bash </b>
 
-        <i> python app.py </i>
+        python app.py
 
 4. Lihat di Browser Buka browser Anda dan kunjungi http://localhost:6543/
 
@@ -26,15 +26,15 @@ Pastikan Virtual Environment Aktif Pastikan virtual environment Anda (misalnya %
 
 1. Titik Masuk (Entry Point) - Baris 11
 
-        <i> if __name__ == '__main__': </i>
+        if __name__ == '__main__':
 
     Ini adalah "tombol mulai" Python.
 
 2. Konfigurasi Rute (Routing) - Baris 12-14
 
-        <i> with Configurator() as config:
+        with Configurator() as config:
         config.add_route('hello', '/')
-        config.add_view(hello_world, route_name='hello') </i>
+        config.add_view(hello_world, route_name='hello')
         
     Configurator adalah pusat dari aplikasi Pyramid. Bagian ini berfungsi sebagai "peta" untuk situs web:
 
@@ -44,9 +44,9 @@ Pastikan Virtual Environment Aktif Pastikan virtual environment Anda (misalnya %
 
 3. Logika "View" - Baris 6-8
 
-        <i> def hello_world(request):
+        def hello_world(request):
         print('Incoming request')
-        return Response('<body><.h1>Hello World!</.h1></body>') </i>
+        return Response('<body><.h1>Hello World!</.h1></body>')
     
     ![contoh gambar](<Screenshot 2025-11-12 023449.png>)
 
@@ -54,8 +54,8 @@ Pastikan Virtual Environment Aktif Pastikan virtual environment Anda (misalnya %
 
 4. Menjalankan Server - Baris 15-16
    
-        <i> app = config.make_wsgi_app()
-        serve(app, host='0.0.0.0', port=6543) </i>
+        app = config.make_wsgi_app()
+        serve(app, host='0.0.0.0', port=6543)
 
     Setelah semua konfigurasi selesai, dua baris ini bertugas untuk menyalakan server:
 
