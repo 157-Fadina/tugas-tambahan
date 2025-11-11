@@ -25,7 +25,7 @@ Lihat di Browser Buka browser Anda dan kunjungi http://localhost:6543/
 
 1. Titik Masuk (Entry Point) - Baris 11
 
-    <i> if __name__ == '__main__': <i>
+    <i> if __name__ == '__main__': </i>
 
 Ini adalah "tombol mulai" Python.
 
@@ -45,7 +45,7 @@ Configurator adalah pusat dari aplikasi Pyramid. Bagian ini berfungsi sebagai "p
 
    <i> def hello_world(request):
         print('Incoming request')
-        return Response('<body><h1>Hello World!</h1></body>') </i>
+        return Response('<body><.h1>Hello World!</.h1></body>') </i>
 
 <img width="663" height="204" alt="image" src="https://github.com/user-attachments/assets/e1e948c8-b756-418a-878e-815ee15b0844" />
 
