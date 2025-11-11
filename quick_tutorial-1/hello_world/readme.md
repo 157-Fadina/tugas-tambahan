@@ -36,7 +36,7 @@ config.add_view(hello_world, route_name='hello'): Menghubungkan rute ke view. In
 
 def hello_world(request):
     print('Incoming request')
-    return Response('<body><h1>Hello World!</h1></body>')
+    return Response('<body><h1>Hello World!</h1></body>')\
 
 Ini adalah fungsi "view" (hello_world) yang dirujuk pada langkah konfigurasi. Hal ini adalah logika sebenarnya yang dijalankan saat pengguna (kita) mengunjungi rute /. Tugasnya adalah menerima request dan mengembalikan jawaban, yang dalam hal ini adalah HTML sederhana.
 
