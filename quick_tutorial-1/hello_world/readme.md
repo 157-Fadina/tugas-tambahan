@@ -46,7 +46,7 @@ Lihat di Browser Buka browser Anda dan kunjungi http://localhost:6543/
 
 <i> def hello_world(request):
         print('Incoming request')
-        return Response('<body><h1>Hello World!</h1></body>') </i>
+        return Response('<body><.h1>Hello World!</.h1></body>') </i>
 
     Ini adalah fungsi "view" (hello_world) yang dirujuk pada langkah konfigurasi. Hal ini adalah logika sebenarnya yang dijalankan saat pengguna (kita) mengunjungi rute /. Tugasnya adalah menerima request dan mengembalikan jawaban, yang dalam hal ini adalah HTML sederhana.
 
