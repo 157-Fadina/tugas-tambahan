@@ -26,13 +26,13 @@ Lihat di Browser Buka browser Anda dan kunjungi http://localhost:6543/
 
 1. Titik Masuk (Entry Point) - Baris 11
 
-    <i> if __name__ == '__main__': </i>
+        <i> if __name__ == '__main__': </i>
 
     Ini adalah "tombol mulai" Python.
 
 2. Konfigurasi Rute (Routing) - Baris 12-14
 
-    <i> with Configurator() as config:
+        <i> with Configurator() as config:
         config.add_route('hello', '/')
         config.add_view(hello_world, route_name='hello') </i>
         
@@ -44,16 +44,16 @@ Lihat di Browser Buka browser Anda dan kunjungi http://localhost:6543/
 
 3. Logika "View" - Baris 6-8
 
-<i> def hello_world(request):
+        <i> def hello_world(request):
         print('Incoming request')
         return Response('<body><.h1>Hello World!</.h1></body>') </i>
 
-    Ini adalah fungsi "view" (hello_world) yang dirujuk pada langkah konfigurasi. Hal ini adalah logika sebenarnya yang dijalankan saat pengguna (kita) mengunjungi rute /. Tugasnya adalah menerima request dan mengembalikan jawaban, yang dalam hal ini adalah HTML sederhana.
+    ini adalah fungsi "view" (hello_world) yang dirujuk pada langkah konfigurasi. Hal ini adalah logika sebenarnya yang dijalankan saat pengguna (kita) mengunjungi rute /. Tugasnya adalah menerima request dan mengembalikan jawaban, yang dalam hal ini adalah HTML sederhana.
 
 4. Menjalankan Server - Baris 15-16
    
         <i> app = config.make_wsgi_app()
-    serve(app, host='0.0.0.0', port=6543) </i>
+        serve(app, host='0.0.0.0', port=6543) </i>
 
     Setelah semua konfigurasi selesai, dua baris ini bertugas untuk menyalakan server:
 
