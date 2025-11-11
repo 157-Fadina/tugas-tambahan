@@ -47,6 +47,8 @@ Pastikan Virtual Environment Aktif Pastikan virtual environment Anda (misalnya %
         <i> def hello_world(request):
         print('Incoming request')
         return Response('<body><.h1>Hello World!</.h1></body>') </i>
+    
+    ![contoh gambar](<Screenshot 2025-11-12 023449.png>)
 
     ini adalah fungsi "view" (hello_world) yang dirujuk pada langkah konfigurasi. Hal ini adalah logika sebenarnya yang dijalankan saat pengguna (kita) mengunjungi rute /. Tugasnya adalah menerima request dan mengembalikan jawaban, yang dalam hal ini adalah HTML sederhana.
 
