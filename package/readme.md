@@ -14,6 +14,7 @@
     
     <b> Bash </b>
     Menginstal paket 'tutorial' dan dependensinya (seperti pyramid, waitress)
+        
         pip install -e .
 
 4. Setelah instalasi selesai, Anda dapat menjalankan server aplikasi.
