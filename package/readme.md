@@ -13,6 +13,7 @@
 3. Jalankan perintah berikut dari direktori *root* (direktori yang berisi file `setup.py`):
     
     <b> Bash </b>
+    
     Menginstal paket 'tutorial' dan dependensinya (seperti pyramid, waitress)
         
         pip install -e .
@@ -20,6 +21,7 @@
 4. Setelah instalasi selesai, Anda dapat menjalankan server aplikasi.
 
     <b> Bash </b>
+        
         python tutorial/app.py
 
 5. Server akan dimulai, dan Anda dapat mengakses aplikasi di http://localhost:6543.
