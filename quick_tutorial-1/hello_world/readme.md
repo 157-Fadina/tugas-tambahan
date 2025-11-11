@@ -2,17 +2,16 @@
 
 -------
 
-Menjalankan Proyek
+1. Menjalankan Proyek
 Pastikan Virtual Environment Aktif Pastikan virtual environment Anda (misalnya %VENV%) sudah aktif di terminal.
 
-Install Ketergantungan (Dependencies) Jika belum, install Pyramid dan Waitress:
+2. Install Ketergantungan (Dependencies) Jika belum, install Pyramid dan Waitress:
 
-------
 Bash
 pip install pyramid
 pip install waitress
 Jalankan Server Dari dalam folder hello_world, jalankan aplikasi:
-------
+
 Bash
 python app.py
 Lihat di Browser Buka browser Anda dan kunjungi http://localhost:6543/
