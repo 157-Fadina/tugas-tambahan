@@ -2,6 +2,7 @@
 Langkah ini menunjukkan betapa fleksibelnya Pyramid dalam mengizinkan kita menukar komponen-komponen utama, seperti templating engine.
 
 1. Cara Kerja Add-on di Pyramid
+
     Mendapatkan add-on Pyramid untuk bekerja adalah proses yang sederhana dan terdiri dari dua langkah:
     - Pertama, kita meng-install paket tersebut ke virtual environment kita menggunakan pip (seperti paket Python lainnya).
     - Kedua, kita memberi tahu Configurator Pyramid (config) untuk menjalankan kode setup dari add-on tersebut.
@@ -18,12 +19,14 @@ Langkah ini menunjukkan betapa fleksibelnya Pyramid dalam mengizinkan kita menuk
 
     1. Proyek kita sekarang bergantung pada pyramid_jinja2. Kita menambahkannya ke setup.py. Mengapa ini lebih baik daripada menginstalnya secara manual (pip install pyramid_jinja2)? karena dengan menambahkannya ke <b> install_requires </b> di setup.py, kita mencatatnya sebagai dependensi permanen proyek. Yang berarti:
 
-    - Proyek kita menjadi self-contained. Siapa pun dapat meng-install semua yang dibutuhkan proyek hanya dengan satu perintah: <b> pip install -e .. </b> Kita tidak perlu ingat untuk meng-install pyramid_jinja2 secara manual setiap kali kita membuat virtual environment baru.
+    * Proyek kita menjadi self-contained. Siapa pun dapat meng-install semua yang dibutuhkan proyek hanya dengan satu perintah: <b> pip install -e .. </b> Kita tidak perlu ingat untuk meng-install pyramid_jinja2 secara manual setiap kali kita membuat virtual environment baru.
 
     2. Kita menggunakan <i> config.include('pyramid_jinja2')</i> yaitu konfigurasi imperatif di __init__.py. Dengan ini kita bisa menggunakan konfigurasi deklaratif dengan menambahkannya ke file <i> .ini <i> kita. Sama seperti yang kita lakukan untuk debug toolbar, kita bisa menambahkannya di development.ini:
-
+    
         pyramid.includes =
+
             pyramid_debugtoolbar
+
             pyramid_jinja2
 
     Kedua metode imperatif di .py atau deklaratif di .ini mencapai hasil akhir yang sama persis. Ini murni soal preferensi dan di mana kita lebih suka mengelola konfigurasi add-on.
