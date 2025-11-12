@@ -17,3 +17,5 @@ File `tests.py` ini adalah contoh implementasi *unit test* untuk aplikasi Pyrami
 
 3. Catatan Penting
     Untuk tes spesifik yang kita tulis ini, *view* `hello_world` sangat sederhana dan tidak bergantung pada konfigurasi Pyramid apa pun. Oleh karena itu, panggilan ke `testing.setUp()` dan `testing.tearDown()` sebenarnya **tidak wajib** di sini. Kita menyertakannya sebagai contoh praktik yang baik (*best practice*) untuk tes di masa depan yang mungkin lebih kompleks (misalnya, tes yang perlu mendaftarkan *route*, *renderer*, atau pengaturan keamanan sebelum dijalankan).
+
+![alt text](<Screenshot 2025-11-12 225002.png>)
