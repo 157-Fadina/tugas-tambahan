@@ -11,3 +11,5 @@ Untuk mempermudah transisi, jadi tidak menambahkan fungsionalitas baru pada lang
     - Kita mengikuti pola baru untuk setiap tes, yaitu
         * Membuat instance dari view class dengan dummy request <i> (inst = TutorialViews(request)) </i>.
         * Memanggil method view yang sedang diuji pada instance tersebut <i> (response = inst.home()) </i>
+
+![alt text](<Screenshot 2025-11-13 054131.png>)
