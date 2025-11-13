@@ -1,4 +1,4 @@
-<h1> 09: Organizing Views With View Classes </h1>
+<h1> 14: AJAX Development With JSON Renderers </h1>
 Langkah ini menunjukkan kekuatan dari arsitektur Pyramid, di mana kita dapat dengan mudah menyajikan format data yang berbeda antara HTML dan JSON dari logika view yang sama persis.
 
 1. Keuntungan View Berorientasi Data
